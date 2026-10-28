@@ -1,4 +1,4 @@
-<!doctype html>
+۶<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
@@ -206,6 +206,18 @@
       style="margin-top:14px;padding:12px 22px;background:#00eaff;color:#001018;border:0;border-radius:8px;font-weight:bold"
     >ارسال رسید</button>
     <p id="receiptStatus" role="status"></p>
+    
+<div style="max-width:420px;margin:20px auto;padding:18px;border:1px solid #ddd;border-radius:14px;text-align:center;background:#f8fafc;color:#111">
+  <h3>💳 اطلاعات پرداخت</h3>
+  <p>شماره کارت جهت واریز:</p>
+  <div id="cardNumber" style="font-size:20px;font-weight:bold;letter-spacing:1px;direction:ltr">
+   6219861457404142 
+  </div>
+  <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('cardNumber').innerText).then(()=>{this.innerText='کپی شد ✓';setTimeout(()=>this.innerText='کپی شماره کارت',2000)}).catch(()=>alert('کپی انجام نشد؛ شماره را دستی کپی کن'))" style="margin-top:14px;padding:10px 18px;border:0;border-radius:8px;background:#166534;color:white">
+    کپی شماره کارت
+  </button>
+</div>
+
   </form>
 </section>
 
